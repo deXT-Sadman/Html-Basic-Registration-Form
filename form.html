@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        form{
+            background-color: greenyellow;
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: medium;
+            
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2><u>Registration Form</u></h2>
+
+        <div>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" placeholder="Enter Your First Name Here" id="firstname" required pattern="[a-zA-Z]+">
+        </div><br/>
+
+        <div>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" placeholder="Enter Your Last Name Here" id="lastname" required pattern="[a-zA-Z]+">
+        </div><br/>
+
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" placeholder="Enter Your Email Here" id="email" required>
+        </div><br/>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Enter Your Password Here" id="password" required>
+        </div><br/>
+
+        <div>
+            <label for="address">Your Address:</label>
+            <input type="text" name="address" placeholder="Enter Your Address Here" id="address" required>
+        </div><br/>
+
+        <div>
+            <label for="nationality">Your Nationality:</label>
+            <input type="text" name="nationality" placeholder="Enter Your Nationality Here" id="nationality" required>
+        </div><br/>
+
+        <div>
+            <label for="phoneNo">Contract No.:</label>
+            <input type="text" name="phoneNo" placeholder="Enter Your Phone No. Here" id="phoneNo" required>
+        </div><br/>
+
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" required>
+        </div><br/>
+
+        <div>
+            <label for="photo">Insert your Photo:</label>
+            <input type="file" name="photo" id="photo">
+        </div><br/>
+
+        <div>
+            <label for="maritalStatus">Marital Status </label>
+            <input type="radio" name="maritalStatus" id="maritalStatus" value="married" required>Married
+            <input type="radio" name="maritalStatus" id="maritalStatus" value="Unmarried" required>Unmarried
+            
+        </div><br/>
+
+        <div>
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" id="gender" value="Male" required>Male
+            <input type="radio" name="gender" id="gender" value="Female" required>Female
+            <input type="radio" name="gender" id="gender" value="Others" required>Others
+        </div><br/>
+
+        <div>
+            <label for="religion">Religion:</label>
+            <input type="checkbox" name="relgion1" id="Islam" value="Islam">Islam
+            <input type="checkbox" name="relgion2" id="Hinduism" value="Hinduism">Hinduism
+            <input type="checkbox" name="relgion3" id="Buddism" value="Buddism">Buddism
+            <input type="checkbox" name="relgion4" id="Christianity" value="Christianity">Christianity
+            <input type="checkbox" name="relgion5" id="Other Faiths" value="Other Faiths">Others
+        </div><br/>
+
+        <div>
+            <label for="programs">Programs:</label>
+            <select name="programs" id="programs">
+                <option value="undergraduate">Undergraduate</option>
+                <option value="graduate">Graduate</option>
+                <option value="mphil">Mphil</option>
+                <option value="phd">PhD</option>
+            </select>
+        </div><br/>
+        <div>
+            <label for="department">Department:</label>
+            <select name="department" id="department">
+                <option value="CSE">CSE</option>
+                <option value="BBA">BBA</option>
+                <option value="ENB">ENB</option>
+                <option value="EEE">EEE</option>
+                <option value="BPM">BPM</option>
+                <option value="JMS">JMS</option>
+                <option value="LLB">LLB</option>
+            </select>
+        </div><br/>
+
+        <div>
+            <label for="details">Details About You: </label> <br/>
+            <textarea name="details" id="details" cols="30" rows="10"></textarea>
+        </div><br/>
+
+        <div>
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+        </div><br/>
+    </form>
+    
+</body>
+</html>
